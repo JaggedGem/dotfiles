@@ -1,0 +1,7 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export QT_QPA_PLATFORMTHEME:qt6ct
+SETUVAR --export XDG_CURRENT_DESKTOP:niri
+SETUVAR --export XDG_SESSION_DESKTOP:niri
+SETUVAR __fish_initialized:4300
+SETUVAR fish_user_paths:/home/bogdan/\x2elocal/bin

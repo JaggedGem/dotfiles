@@ -1,0 +1,61 @@
+# ─────────────────────────────────────────
+#  Ghostty Configuration
+# ─────────────────────────────────────────
+
+# Theme
+theme = Dimidium
+
+# ── Font ──────────────────────────────────
+font-family            = "JetBrains Mono"
+font-size              = 13
+font-feature           = calt
+font-feature           = liga
+font-thicken           = true
+
+# ── Cursor ────────────────────────────────
+cursor-style           = bar
+cursor-style-blink     = true
+cursor-invert-fg-bg    = false
+
+# ── Window ────────────────────────────────
+window-padding-x       = 12
+window-padding-y       = 10
+window-padding-balance = true
+window-decoration      = true
+window-title-font-family = "JetBrains Mono"
+
+# ── Scrollback ────────────────────────────
+scrollback-limit       = 10000
+
+# ── Shell Integration ─────────────────────
+shell-integration       = fish
+shell-integration-features = cursor,sudo,title
+
+# ── Mouse ─────────────────────────────────
+mouse-hide-while-typing = true
+
+# ── Copy / Paste ──────────────────────────
+copy-on-select          = false
+clipboard-trim-trailing-spaces = true
+
+# ── Keybinds ──────────────────────────────
+# New tab
+keybind = ctrl+t=new_tab
+# Close tab
+keybind = ctrl+w=close_surface
+# Next / prev tab
+keybind = ctrl+tab=next_tab
+keybind = ctrl+shift+tab=previous_tab
+# Split pane horizontally (right)
+keybind = ctrl+shift+d=new_split:right
+# Split pane vertically (down)
+keybind = ctrl+shift+e=new_split:down
+# Navigate splits
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+l=goto_split:right
+keybind = ctrl+shift+k=goto_split:up
+keybind = ctrl+shift+j=goto_split:down
+# Increase / decrease font size
+keybind = ctrl+equal=increase_font_size:1
+keybind = ctrl+minus=decrease_font_size:1
+keybind = ctrl+zero=reset_font_size
