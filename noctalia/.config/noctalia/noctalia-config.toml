@@ -1,0 +1,261 @@
+[bar.default]
+capsule = true
+end = [ "media", "tray", "clipboard", "volume", "battery", "widget", "screenshot", "privacy", "session" ]
+margin_ends = 10
+start = [ "launcher", "workspaces" ]
+
+[brightness]
+enable_ddcutil = true
+minimum_brightness = 0.14999999664723873
+
+[control_center]
+hidden_tabs = [ "monitor", "bluetooth", "notifications" ]
+sidebar = "full"
+sidebar_section = "full"
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
+
+    [[control_center.shortcuts]]
+    type = "power_profile"
+
+[dock]
+enabled = true
+icon_size = 40
+reserve_space = false
+smart_auto_hide = true
+
+[location]
+address = "Stauceni, Moldova"
+auto_locate = true
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [
+    "lockscreen-login-box@winit",
+    "lockscreen-login-box@HDMI-A-2",
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000003",
+    "lockscreen-widget-0000000000000004",
+    "lockscreen-widget-0000000000000005"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "HDMI-A-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@winit"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 474.0
+    cy = 882.0
+    output = "winit"
+    placement_height = 1064.0
+    placement_width = 948.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@winit".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 176.0
+    box_width = 320.0
+    cx = 960.0
+    cy = 324.0
+    output = "HDMI-A-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        format = "{:%I:%M %p}"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 960.0
+    cy = 486.0
+    output = "HDMI-A-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        background = true
+        bands = 32
+        color_2 = "secondary"
+        reversed = false
+        show_when_idle = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000004]
+    box_height = 80.0
+    box_width = 176.0
+    cx = 960.0
+    cy = 692.0
+    output = "HDMI-A-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "weather"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000004.settings]
+        show_forecast = false
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000005]
+    box_height = 64.0
+    box_width = 448.0
+    cx = 976.0
+    cy = 172.0
+    output = "HDMI-A-2"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000005.settings]
+        background = true
+        format = "{:%a, %d %b %Y}"
+
+[notification]
+layer = "overlay"
+
+[plugin_settings."yuuto/arch-updater"]
+aur_helper = "yay"
+auto_check_hours = 6
+flatpak_enabled = false
+terminal = "ghostty"
+
+[plugins]
+enabled = [ "yuuto/arch-updater", "raycursive/niri-displays" ]
+
+[shell]
+avatar_path = "/home/bogdan/Downloads/avatar.png"
+date_format = "%A, %d %b %Y"
+password_style = "random"
+time_format = "{:%I:%M %p}"
+
+    [shell.launcher]
+    categories = false
+    pinned = [ "google-chrome", "vesktop" ]
+
+    [shell.panel]
+    clipboard_placement = "attached"
+    open_near_click_clipboard = true
+    session_placement = "floating"
+    session_position = "center"
+
+    [shell.screenshot]
+    confirm_region = true
+
+[theme]
+mode = "dark"
+pure_black_dark = true
+source = "wallpaper"
+wallpaper_scheme = "m3-content"
+
+[wallpaper]
+transition_on_startup = true
+
+    [wallpaper.default]
+    path = "/home/bogdan/Pictures/Wallpapers/vintage-ascent.jpg"
+
+    [wallpaper.last]
+    path = "/home/bogdan/Pictures/Wallpapers/vintage-ascent.jpg"
+
+    [wallpaper.monitors.HDMI-A-2]
+    path = "/home/bogdan/Pictures/Wallpapers/vintage-ascent.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/bogdan/Pictures/Wallpapers/vintage-ascent.jpg"
+
+[widget.battery]
+hide_when_full = true
+
+[widget.clock]
+format = "{:%I:%M %p}"
+
+[widget.launcher]
+glyph = "apps"
+
+[widget.tray]
+drawer = true
+
+[widget.widget]
+glyph = "arrow-big-up-line"
+type = "yuuto/arch-updater:widget"

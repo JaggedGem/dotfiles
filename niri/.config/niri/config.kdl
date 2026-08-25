@@ -24,7 +24,8 @@ output "HDMI-A-2" {
 
 spawn-at-startup "polkit-gnome-authentication-agent-1"
 spawn-at-startup "mako"
-spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-at-startup "noctalia"
+// spawn-at-startup "qs" "-c" "noctalia-shell" // discontinued from v4
 // spawn-at-startup "waybar"
 spawn-at-startup "systemctl" "--user" "import-environment" "WAYLAND_DISPLAY" "DISPLAY" "XDG_CURRENT_DESKTOP" "XDG_SESSION_DESKTOP" "XDG_SESSION_TYPE" "XDG_RUNTIME_DIR"
 spawn-at-startup "systemctl" "--user" "start" "graphical-session.target"
@@ -36,10 +37,10 @@ prefer-no-csd
 binds {
     Mod+T { spawn "ghostty"; }
     Mod+E { spawn "dolphin"; }
-    Mod+C { spawn "code"; }
-    Mod+V { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:clipper" "toggle"; }
-    Mod+Space { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
-    Mod+Shift+S { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "plugin:screen-toolkit" "annotate"; }
+    Mod+C { spawn "code-insiders"; }
+    Mod+V { spawn-sh "noctalia msg panel-toggle clipboard"; }
+    Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
+    Mod+Shift+S { spawn-sh "noctalia msg plugin alexander/screen-toolkit:service all annotate"; }
 
     Mod+Q { close-window; }
     Mod+Shift+E { quit; }
