@@ -27,11 +27,11 @@ spawn-at-startup "mako"
 spawn-at-startup "noctalia"
 // spawn-at-startup "qs" "-c" "noctalia-shell" // discontinued from v4
 // spawn-at-startup "waybar"
-spawn-at-startup "systemctl" "--user" "import-environment" "WAYLAND_DISPLAY" "DISPLAY" "XDG_CURRENT_DESKTOP" "XDG_SESSION_DESKTOP" "XDG_SESSION_TYPE" "XDG_RUNTIME_DIR"
-spawn-at-startup "systemctl" "--user" "start" "graphical-session.target"
-spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "DISPLAY" "XDG_CURRENT_DESKTOP" "XDG_SESSION_DESKTOP" "XDG_SESSION_TYPE" "XDG_RUNTIME_DIR"
-spawn-at-startup "systemctl" "--user" "start" "niri-session.target"
-spawn-at-startup "systemctl" "--user" "start" "xdg-desktop-portal.service"
+// spawn-at-startup "systemctl" "--user" "import-environment" "WAYLAND_DISPLAY" "DISPLAY" "XDG_CURRENT_DESKTOP" "XDG_SESSION_DESKTOP" "XDG_SESSION_TYPE" "XDG_RUNTIME_DIR"
+// spawn-at-startup "systemctl" "--user" "start" "graphical-session.target"
+// spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "DISPLAY" "XDG_CURRENT_DESKTOP" "XDG_SESSION_DESKTOP" "XDG_SESSION_TYPE" "XDG_RUNTIME_DIR"
+// spawn-at-startup "systemctl" "--user" "start" "niri-session.target"
+// spawn-at-startup "systemctl" "--user" "start" "xdg-desktop-portal.service"
 prefer-no-csd
 
 binds {

@@ -1,0 +1,12 @@
+#!/usr/bin/env fish
+
+# Set Wayland/Niri session variables
+set -gx XDG_SESSION_TYPE wayland
+set -gx XDG_CURRENT_DESKTOP niri
+set -gx XDG_SESSION_DESKTOP niri
+
+# Connect to the existing systemd user D-Bus
+set -gx DBUS_SESSION_BUS_ADDRESS "unix:path=$XDG_RUNTIME_DIR/bus"
+
+# Launch Niri with systemd session integration
+exec niri-session -l
